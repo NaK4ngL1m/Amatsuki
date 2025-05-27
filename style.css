@@ -1,0 +1,236 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e3f2fd);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  html {
+  scroll-behavior: smooth;
+}
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2196f3;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #1565c0;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #2196f3;
+    padding-left: 0.5rem;
+    color: #1565c0;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+    list-style-type: square;
+  }
+  
+  a {
+    color: #2196f3;
+  }
+  
+  footer {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+/* Section backgrounds */
+#about {
+    background-color: #e3f2fd; /* biru muda */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  #projects {
+    background-color: #fff3e0; /* oranye lembut */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  #contact {
+    background-color: #ede7f6; /* ungu pastel */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  .text-bg {
+    background-color: rgba(255, 255, 255, 0.7); /* putih transparan */
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+      /* Style umum untuk tiap section */
+.section-box {
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  color: #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Background awal */
+#about.section-box {
+  background-color: #e3f2fd; /* biru muda */
+}
+#projects.section-box {
+  background-color: #fff3e0; /* oranye pastel */
+}
+#contact.section-box {
+  background-color: #ede7f6; /* ungu pastel */
+}
+
+/* Efek saat ditekan */
+.section-box:active {
+  transform: scale(0.98);
+}
+
+/* Efek warna saat ditekan */
+#about.section-box:active {
+  background-color: #bbdefb; /* biru lebih gelap */
+}
+#projects.section-box:active {
+  background-color: #ffe0b2; /* oranye lebih gelap */
+}
+#contact.section-box:active {
+  background-color: #d1c4e9; /* ungu lebih gelap */
+}
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  color: #007bff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+/* NAVIGATION STYLING */
+.nav-bar {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  width: fit-content;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* LINK STYLE */
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0056b3;
+  font-size: 1.1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT BARU - latar belakang biru lembut */
+.nav-bar a:hover {
+  background-color: #bdd6f0;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+/* HOVER EFFECT */
+.nav-bar a:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+.nav-bar a:hover::after {
+  width: 100%;
+}
+
